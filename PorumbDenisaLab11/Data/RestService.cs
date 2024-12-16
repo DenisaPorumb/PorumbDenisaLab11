@@ -9,11 +9,11 @@ using PorumbDenisaLab11.Models;
 namespace PorumbDenisaLab11.Data
 {
   
-        public class RestService : IRestService
-        {
+        public class RestService : IRestService  
+    {
             HttpClient client;
             //se va modifica ulterior cu ip-ul si portul corespunzator
-            string RestUrl = "https://192.169.100.14:45455/api/shoplists/{0}";
+            string RestUrl = "https://192.168.100.14:45455/api/shoplists/{0}";
             public List<ShopList> Items { get; private set; }
             public RestService()
             {
